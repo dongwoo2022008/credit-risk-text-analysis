@@ -1,0 +1,67 @@
+%%{init: {'theme':'base', 'themeVariables': { 'primaryColor':'#fff','primaryTextColor':'#000','primaryBorderColor':'#000','lineColor':'#000'}}}%%
+flowchart TB
+    %% 입력 단계
+    P0["① Phase 0<br/>(구조화단독)"]
+    P1["② Phase 1<br/>(텍스트단독)"]
+    
+    %% 메인 처리 흐름
+    P2["③ Phase 2<br/>(구조화+텍스트)"]
+    P3["④ Phase 3<br/>(하이퍼파라미터튜닝)"]
+    P4["⑤ Phase 4<br/>(앙상블)"]
+    P5["⑥ Phase 5<br/>(텍스트 조건부 추가)"]
+    
+    %% Stage 그룹
+    subgraph SG["텍스트 임베딩 방법"]
+        S1["Stage1<br/>(tf-idf)"]
+        S2["Stage2<br/>(subword)"]
+        S3["Stage3<br/>(MINiLM)"]
+        S4["Stage4<br/>(KoSimCSE)"]
+    end
+    
+    %% Phase 4 하위 그룹
+    subgraph P4G["Phase 4 세부 기법"]
+        P4_1["4-1 Voting H"]
+        P4_2["4-2 Voting W"]
+        P4_3["4-3 Blanding"]
+        P4_4["4-4 Stacking"]
+    end
+    
+    %% Phase 5 하위 그룹
+    subgraph P5G["Phase 5 세부 기법"]
+        P5_1["5-1 경계효과"]
+        P5_2["5-2 오류사례"]
+        P5_3["5-3 원격값"]
+        P5_4["5-4 텍스트길이"]
+    end
+    
+    %% 메인 흐름
+    P0 --> P2
+    P1 --> P2
+    P2 -->|"통합"| P3
+    P3 -->|"최적화"| P4
+    P4 -->|"조건부 적용"| P5
+    
+    %% Stage 연결 (그룹으로)
+    P1 -.->|"4가지 방법 적용"| SG
+    P2 -.->|"4가지 방법 적용"| SG
+    
+    %% 하위 그룹 연결
+    P4 --> P4G
+    P5 --> P5G
+    
+    %% 스타일 정의
+    classDef inputStyle fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#000
+    classDef processStyle fill:#f5f5f5,stroke:#424242,stroke-width:2px,color:#000
+    classDef stageStyle fill:#fff9c4,stroke:#f57f17,stroke-width:2px,color:#000
+    classDef subStyle fill:#e8f5e9,stroke:#388e3c,stroke-width:1.5px,color:#000
+    
+    %% 스타일 적용
+    class P0,P1 inputStyle
+    class P2,P3,P4,P5 processStyle
+    class S1,S2,S3,S4 stageStyle
+    class P4_1,P4_2,P4_3,P4_4,P5_1,P5_2,P5_3,P5_4 subStyle
+    
+    %% 서브그래프 스타일
+    style SG fill:#fffde7,stroke:#f57f17,stroke-width:2px,stroke-dasharray: 5 5
+    style P4G fill:#f1f8e9,stroke:#388e3c,stroke-width:2px,stroke-dasharray: 5 5
+    style P5G fill:#f1f8e9,stroke:#388e3c,stroke-width:2px,stroke-dasharray: 5 5

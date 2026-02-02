@@ -1,0 +1,162 @@
+<mxfile host="app.diagrams.net" modified="2026-01-23T00:00:00.000Z" agent="Manus" version="24.0.0">
+  <diagram name="Research Methodology Flowchart" id="flowchart">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- Phase 0 -->
+        <mxCell id="P0" value="① Phase 0&lt;br&gt;Structured Only" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#1976D2;strokeWidth=3;fontSize=20;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="40" y="120" width="180" height="100" as="geometry" />
+        </mxCell>
+        
+        <!-- Phase 1 -->
+        <mxCell id="P1" value="② Phase 1&lt;br&gt;Text Only" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#1976D2;strokeWidth=3;fontSize=20;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="40" y="260" width="180" height="100" as="geometry" />
+        </mxCell>
+        
+        <!-- Phase 2 -->
+        <mxCell id="P2" value="③ Phase 2&lt;br&gt;Structured + Text" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#424242;strokeWidth=3;fontSize=20;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="280" y="180" width="180" height="100" as="geometry" />
+        </mxCell>
+        
+        <!-- Phase 3 -->
+        <mxCell id="P3" value="④ Phase 3&lt;br&gt;Hyperparameter&lt;br&gt;Tuning" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#424242;strokeWidth=3;fontSize=20;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="520" y="180" width="200" height="100" as="geometry" />
+        </mxCell>
+        
+        <!-- Phase 4 -->
+        <mxCell id="P4" value="⑤ Phase 4&lt;br&gt;Ensemble" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#424242;strokeWidth=3;fontSize=20;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="780" y="180" width="180" height="100" as="geometry" />
+        </mxCell>
+        
+        <!-- Phase 5 -->
+        <mxCell id="P5" value="⑥ Phase 5&lt;br&gt;Conditional Text&lt;br&gt;Addition" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#424242;strokeWidth=3;fontSize=20;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1020" y="180" width="200" height="100" as="geometry" />
+        </mxCell>
+        
+        <!-- Text Embedding Methods Group -->
+        <mxCell id="SG_Box" value="Text Embedding Methods" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFDE7;strokeColor=#F57F17;strokeWidth=2.5;fontSize=18;fontStyle=1;dashed=1;dashPattern=8 5;verticalAlign=top" vertex="1" parent="1">
+          <mxGeometry x="280" y="20" width="680" height="120" as="geometry" />
+        </mxCell>
+        
+        <!-- Stage 1 -->
+        <mxCell id="S1" value="Stage 1&lt;br&gt;tf-idf" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF9C4;strokeColor=#F57F17;strokeWidth=2.5;fontSize=18" vertex="1" parent="1">
+          <mxGeometry x="300" y="60" width="140" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Stage 2 -->
+        <mxCell id="S2" value="Stage 2&lt;br&gt;subword" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF9C4;strokeColor=#F57F17;strokeWidth=2.5;fontSize=18" vertex="1" parent="1">
+          <mxGeometry x="470" y="60" width="140" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Stage 3 -->
+        <mxCell id="S3" value="Stage 3&lt;br&gt;MINiLM" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF9C4;strokeColor=#F57F17;strokeWidth=2.5;fontSize=18" vertex="1" parent="1">
+          <mxGeometry x="640" y="60" width="140" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Stage 4 -->
+        <mxCell id="S4" value="Stage 4&lt;br&gt;KoSimCSE" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF9C4;strokeColor=#F57F17;strokeWidth=2.5;fontSize=18" vertex="1" parent="1">
+          <mxGeometry x="810" y="60" width="140" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Phase 4 Techniques Group -->
+        <mxCell id="P4G_Box" value="Phase 4 Techniques" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F1F8E9;strokeColor=#388E3C;strokeWidth=2.5;fontSize=18;fontStyle=1;dashed=1;dashPattern=8 5;verticalAlign=top" vertex="1" parent="1">
+          <mxGeometry x="40" y="420" width="680" height="120" as="geometry" />
+        </mxCell>
+        
+        <!-- Voting H -->
+        <mxCell id="P4_1" value="Voting H" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#388E3C;strokeWidth=2;fontSize=17" vertex="1" parent="1">
+          <mxGeometry x="60" y="460" width="140" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Voting W -->
+        <mxCell id="P4_2" value="Voting W" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#388E3C;strokeWidth=2;fontSize=17" vertex="1" parent="1">
+          <mxGeometry x="230" y="460" width="140" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Blanding -->
+        <mxCell id="P4_3" value="Blanding" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#388E3C;strokeWidth=2;fontSize=17" vertex="1" parent="1">
+          <mxGeometry x="400" y="460" width="140" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Stacking -->
+        <mxCell id="P4_4" value="Stacking" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#388E3C;strokeWidth=2;fontSize=17" vertex="1" parent="1">
+          <mxGeometry x="570" y="460" width="140" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Phase 5 Techniques Group (오른쪽 여백 추가: width 증가) -->
+        <mxCell id="P5G_Box" value="Phase 5 Techniques" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F1F8E9;strokeColor=#388E3C;strokeWidth=2.5;fontSize=18;fontStyle=1;dashed=1;dashPattern=8 5;verticalAlign=top" vertex="1" parent="1">
+          <mxGeometry x="780" y="420" width="760" height="120" as="geometry" />
+        </mxCell>
+        
+        <!-- Boundary Effect -->
+        <mxCell id="P5_1" value="Boundary&lt;br&gt;Effect" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#388E3C;strokeWidth=2;fontSize=17" vertex="1" parent="1">
+          <mxGeometry x="800" y="460" width="140" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Error Cases -->
+        <mxCell id="P5_2" value="Error&lt;br&gt;Cases" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#388E3C;strokeWidth=2;fontSize=17" vertex="1" parent="1">
+          <mxGeometry x="970" y="460" width="140" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Outlier -->
+        <mxCell id="P5_3" value="Outlier" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#388E3C;strokeWidth=2;fontSize=17" vertex="1" parent="1">
+          <mxGeometry x="1140" y="460" width="140" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Text Length -->
+        <mxCell id="P5_4" value="Text&lt;br&gt;Length" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#388E3C;strokeWidth=2;fontSize=17" vertex="1" parent="1">
+          <mxGeometry x="1310" y="460" width="140" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Arrows -->
+        <!-- P0 -> P2 -->
+        <mxCell id="arrow1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;curved=1" edge="1" parent="1" source="P0" target="P2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- P1 -> P2 -->
+        <mxCell id="arrow2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;curved=1" edge="1" parent="1" source="P1" target="P2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- P2 -> P3 -->
+        <mxCell id="arrow3" value="Integrate" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;curved=1;fontSize=16" edge="1" parent="1" source="P2" target="P3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- P3 -> P4 -->
+        <mxCell id="arrow4" value="Optimize" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;curved=1;fontSize=16" edge="1" parent="1" source="P3" target="P4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- P4 -> P5 -->
+        <mxCell id="arrow5" value="Conditional" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;curved=1;fontSize=16" edge="1" parent="1" source="P4" target="P5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- P1 -> SG (dashed) -->
+        <mxCell id="arrow6" value="4 Methods" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2.5;curved=1;dashed=1;dashPattern=8 5;fontSize=14" edge="1" parent="1" source="P1" target="SG_Box">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- P2 -> SG (dashed) -->
+        <mxCell id="arrow7" value="4 Methods" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2.5;curved=1;dashed=1;dashPattern=8 5;fontSize=14" edge="1" parent="1" source="P2" target="SG_Box">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- P4 -> P4G (dashed) -->
+        <mxCell id="arrow8" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2.5;curved=1;dashed=1;dashPattern=8 5" edge="1" parent="1" source="P4" target="P4G_Box">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- P5 -> P5G (dashed) -->
+        <mxCell id="arrow9" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2.5;curved=1;dashed=1;dashPattern=8 5" edge="1" parent="1" source="P5" target="P5G_Box">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

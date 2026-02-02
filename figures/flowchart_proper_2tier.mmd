@@ -1,0 +1,78 @@
+%%{init: {'theme':'base', 'themeVariables': { 'primaryColor':'#fff','primaryTextColor':'#000','primaryBorderColor':'#000','lineColor':'#000','fontSize':'18px'}}}%%
+flowchart TB
+    %% Upper Row - Horizontal
+    subgraph UpperRow[" "]
+        direction LR
+        P0["<b>① Phase 0</b><br/>Structured Only"]
+        P1["<b>② Phase 1</b><br/>Text Only"]
+        P2["<b>③ Phase 2</b><br/>Structured + Text"]
+        P3["<b>④ Phase 3</b><br/>Hyperparameter<br/>Tuning"]
+        
+        P0 --> P2
+        P1 --> P2
+        P2 -->|"<b>Integrate</b>"| P3
+    end
+    
+    %% Upper Row - Stage Group
+    subgraph SG["<b>Text Embedding Methods</b>"]
+        direction LR
+        S1["<b>Stage 1</b><br/>tf-idf"]
+        S2["<b>Stage 2</b><br/>subword"]
+        S3["<b>Stage 3</b><br/>MINiLM"]
+        S4["<b>Stage 4</b><br/>KoSimCSE"]
+    end
+    
+    %% Lower Row - Horizontal
+    subgraph LowerRow[" "]
+        direction LR
+        P4["<b>⑤ Phase 4</b><br/>Ensemble"]
+        P5["<b>⑥ Phase 5</b><br/>Conditional Text<br/>Addition"]
+        
+        P4 -->|"<b>Conditional</b>"| P5
+    end
+    
+    %% Phase 4 Sub-techniques
+    subgraph P4G["<b>Phase 4 Techniques</b>"]
+        direction LR
+        P4_1["<b>Voting H</b>"]
+        P4_2["<b>Voting W</b>"]
+        P4_3["<b>Blanding</b>"]
+        P4_4["<b>Stacking</b>"]
+    end
+    
+    %% Phase 5 Sub-techniques
+    subgraph P5G["<b>Phase 5 Techniques</b>"]
+        direction LR
+        P5_1["<b>Boundary<br/>Effect</b>"]
+        P5_2["<b>Error<br/>Cases</b>"]
+        P5_3["<b>Outlier</b>"]
+        P5_4["<b>Text<br/>Length</b>"]
+    end
+    
+    %% Vertical Connection from Upper to Lower
+    P3 -->|"<b>Optimize</b>"| P4
+    
+    %% Stage Connections
+    P1 -.->|"<b>4 Methods</b>"| SG
+    P2 -.->|"<b>4 Methods</b>"| SG
+    
+    %% Sub-technique Connections
+    P4 -.-> P4G
+    P5 -.-> P5G
+    
+    %% Styles
+    classDef inputStyle fill:#e3f2fd,stroke:#1976d2,stroke-width:3px,color:#000,font-size:18px
+    classDef processStyle fill:#f5f5f5,stroke:#424242,stroke-width:3px,color:#000,font-size:18px
+    classDef stageStyle fill:#fff9c4,stroke:#f57f17,stroke-width:2.5px,color:#000,font-size:16px
+    classDef subStyle fill:#e8f5e9,stroke:#388e3c,stroke-width:2.5px,color:#000,font-size:16px
+    
+    class P0,P1 inputStyle
+    class P2,P3,P4,P5 processStyle
+    class S1,S2,S3,S4 stageStyle
+    class P4_1,P4_2,P4_3,P4_4,P5_1,P5_2,P5_3,P5_4 subStyle
+    
+    style UpperRow fill:none,stroke:none
+    style LowerRow fill:none,stroke:none
+    style SG fill:#fffde7,stroke:#f57f17,stroke-width:3px,stroke-dasharray: 8 8
+    style P4G fill:#f1f8e9,stroke:#388e3c,stroke-width:3px,stroke-dasharray: 8 8
+    style P5G fill:#f1f8e9,stroke:#388e3c,stroke-width:3px,stroke-dasharray: 8 8

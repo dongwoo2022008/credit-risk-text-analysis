@@ -1,0 +1,68 @@
+%%{init: {'theme':'base', 'themeVariables': { 'primaryColor':'#fff','primaryTextColor':'#000','primaryBorderColor':'#000','lineColor':'#000','fontSize':'22px'}, 'flowchart': {'padding': 20}}}%%
+flowchart LR
+    %% Input Phase
+    P0["<b>① Phase 0</b><br/><b>Structured Only</b>"]
+    P1["<b>② Phase 1</b><br/><b>Text Only</b>"]
+    
+    %% Main Processing Flow
+    P2["<b>③ Phase 2</b><br/><b>Structured + Text</b>"]
+    P3["<b>④ Phase 3</b><br/><b>Hyperparameter</b><br/><b>Tuning</b>"]
+    P4["<b>⑤ Phase 4</b><br/><b>Ensemble</b>"]
+    P5["<b>⑥ Phase 5</b><br/><b>Conditional Text</b><br/><b>Addition</b>"]
+    
+    %% Text Embedding Methods Group
+    subgraph SG["<b>Text Embedding Methods</b>"]
+        direction LR
+        S1["<b>Stage 1</b><br/><b>tf-idf</b>"]
+        S2["<b>Stage 2</b><br/><b>subword</b>"]
+        S3["<b>Stage 3</b><br/><b>MINiLM</b>"]
+        S4["<b>Stage 4</b><br/><b>KoSimCSE</b>"]
+    end
+    
+    %% Phase 4 Sub-techniques
+    subgraph P4G["<b>Phase 4 Techniques</b>"]
+        direction LR
+        P4_1["<b>Voting H</b>"]
+        P4_2["<b>Voting W</b>"]
+        P4_3["<b>Blanding</b>"]
+        P4_4["<b>Stacking</b>"]
+    end
+    
+    %% Phase 5 Sub-techniques
+    subgraph P5G["<b>Phase 5 Techniques</b>"]
+        direction LR
+        P5_1["<b>Boundary</b><br/><b>Effect</b>"]
+        P5_2["<b>Error</b><br/><b>Cases</b>"]
+        P5_3["<b>Outlier</b>"]
+        P5_4["<b>Text</b><br/><b>Length</b>"]
+    end
+    
+    %% Main Flow
+    P0 --> P2
+    P1 --> P2
+    P2 -->|"<b>Integrate</b>"| P3
+    P3 -->|"<b>Optimize</b>"| P4
+    P4 -->|"<b>Conditional</b>"| P5
+    
+    %% Stage Connections
+    P1 -.->|"<b>4 Methods</b>"| SG
+    P2 -.->|"<b>4 Methods</b>"| SG
+    
+    %% Sub-technique Connections
+    P4 -.-> P4G
+    P5 -.-> P5G
+    
+    %% Styles
+    classDef inputStyle fill:#e3f2fd,stroke:#1976d2,stroke-width:4px,color:#000,font-size:22px
+    classDef processStyle fill:#f5f5f5,stroke:#424242,stroke-width:4px,color:#000,font-size:22px
+    classDef stageStyle fill:#fff9c4,stroke:#f57f17,stroke-width:3px,color:#000,font-size:20px
+    classDef subStyle fill:#e8f5e9,stroke:#388e3c,stroke-width:3px,color:#000,font-size:20px
+    
+    class P0,P1 inputStyle
+    class P2,P3,P4,P5 processStyle
+    class S1,S2,S3,S4 stageStyle
+    class P4_1,P4_2,P4_3,P4_4,P5_1,P5_2,P5_3,P5_4 subStyle
+    
+    style SG fill:#fffde7,stroke:#f57f17,stroke-width:4px,stroke-dasharray: 10 10
+    style P4G fill:#f1f8e9,stroke:#388e3c,stroke-width:4px,stroke-dasharray: 10 10
+    style P5G fill:#f1f8e9,stroke:#388e3c,stroke-width:4px,stroke-dasharray: 10 10

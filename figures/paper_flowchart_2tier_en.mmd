@@ -1,0 +1,70 @@
+%%{init: {'theme':'base', 'themeVariables': { 'primaryColor':'#fff','primaryTextColor':'#000','primaryBorderColor':'#000','lineColor':'#000'}}}%%
+flowchart TB
+    %% Upper Tier: Phase 0-4
+    P0["① Phase 0<br/><b>Structured Only</b>"]
+    P1["② Phase 1<br/><b>Text Only</b>"]
+    P2["③ Phase 2<br/><b>Structured + Text</b>"]
+    P3["④ Phase 3<br/><b>Hyperparameter Tuning</b>"]
+    P4["⑤ Phase 4<br/><b>Ensemble</b>"]
+    
+    %% Lower Tier: Phase 5
+    P5["⑥ Phase 5<br/><b>Conditional Text Addition</b>"]
+    
+    %% Stage Group
+    subgraph SG["<b>Text Embedding Methods</b>"]
+        direction LR
+        S1["<b>Stage 1</b><br/>tf-idf"]
+        S2["<b>Stage 2</b><br/>subword"]
+        S3["<b>Stage 3</b><br/>MINiLM"]
+        S4["<b>Stage 4</b><br/>KoSimCSE"]
+    end
+    
+    %% Phase 4 Techniques
+    subgraph P4G["<b>Phase 4 Techniques</b>"]
+        direction LR
+        P4_1["<b>Voting H</b>"]
+        P4_2["<b>Voting W</b>"]
+        P4_3["<b>Blanding</b>"]
+        P4_4["<b>Stacking</b>"]
+    end
+    
+    %% Phase 5 Techniques
+    subgraph P5G["<b>Phase 5 Techniques</b>"]
+        direction LR
+        P5_1["<b>Boundary<br/>Effect</b>"]
+        P5_2["<b>Error<br/>Cases</b>"]
+        P5_3["<b>Outlier</b>"]
+        P5_4["<b>Text<br/>Length</b>"]
+    end
+    
+    %% Upper Tier Flow (Horizontal)
+    P0 --> P2
+    P1 --> P2
+    P2 -->|<b>Integrate</b>| P3
+    P3 -->|<b>Optimize</b>| P4
+    
+    %% Vertical Connection: Phase 4 to Phase 5
+    P4 -->|<b>Conditional</b>| P5
+    
+    %% Stage Connections
+    P1 -.->|<b>4 Methods</b>| SG
+    P2 -.->|<b>4 Methods</b>| SG
+    
+    %% Sub-technique Connections
+    P4 -.-> P4G
+    P5 -.-> P5G
+    
+    %% Styles
+    classDef inputStyle fill:#e3f2fd,stroke:#1976d2,stroke-width:2.5px,color:#000,font-size:14px
+    classDef processStyle fill:#f5f5f5,stroke:#424242,stroke-width:2.5px,color:#000,font-size:14px
+    classDef stageStyle fill:#fff9c4,stroke:#f57f17,stroke-width:2px,color:#000,font-size:13px
+    classDef subStyle fill:#e8f5e9,stroke:#388e3c,stroke-width:2px,color:#000,font-size:13px
+    
+    class P0,P1 inputStyle
+    class P2,P3,P4,P5 processStyle
+    class S1,S2,S3,S4 stageStyle
+    class P4_1,P4_2,P4_3,P4_4,P5_1,P5_2,P5_3,P5_4 subStyle
+    
+    style SG fill:#fffde7,stroke:#f57f17,stroke-width:2.5px,stroke-dasharray: 5 5
+    style P4G fill:#f1f8e9,stroke:#388e3c,stroke-width:2.5px,stroke-dasharray: 5 5
+    style P5G fill:#f1f8e9,stroke:#388e3c,stroke-width:2.5px,stroke-dasharray: 5 5

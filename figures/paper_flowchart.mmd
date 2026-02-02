@@ -1,0 +1,66 @@
+%%{init: {'theme':'base', 'themeVariables': { 'primaryColor':'#ffffff','primaryTextColor':'#000','primaryBorderColor':'#000','lineColor':'#000','secondaryColor':'#f5f5f5','tertiaryColor':'#fff'}}}%%
+flowchart LR
+    %% Phase 0과 1
+    P0["Phase 0<br/>(구조화단독)"]
+    P1["Phase 1<br/>(텍스트단독)"]
+    
+    %% 메인 Phase 흐름
+    P2["Phase 2<br/>(구조화+텍스트)"]
+    P3["Phase 3<br/>(하이퍼파라미터튜닝)"]
+    P4["Phase 4<br/>(앙상블)"]
+    P5["Phase 5<br/>(텍스트 조건부 추가)"]
+    
+    %% Stage 노드들
+    S1["Stage1<br/>(tf-idf)"]
+    S2["Stage2<br/>(subword)"]
+    S3["Stage3<br/>(MINiLM)"]
+    S4["Stage4<br/>(KoSimCSE)"]
+    
+    %% Phase 4 하위
+    P4_1["Phase 4-1<br/>Voting H"]
+    P4_2["Phase 4-2<br/>Voting W"]
+    P4_3["Phase 4-3<br/>Blanding"]
+    P4_4["Phase 4-4<br/>Stacking"]
+    
+    %% Phase 5 하위
+    P5_1["Phase 5-1<br/>(경계효과)"]
+    P5_2["Phase 5-2<br/>(오류사례)"]
+    P5_3["Phase 5-3<br/>(원격값)"]
+    P5_4["Phase 5-4<br/>(텍스트길이)"]
+    
+    %% 메인 흐름 (곡선)
+    P0 -.-> P2
+    P1 -.-> P2
+    P2 --> P3
+    P3 --> P4
+    P4 --> P5
+    
+    %% Phase 1에서 Stage로 (곡선)
+    P1 -.-> S1
+    P1 -.-> S2
+    P1 -.-> S3
+    P1 -.-> S4
+    
+    %% Phase 2에서 Stage로 (곡선)
+    P2 -.-> S1
+    P2 -.-> S2
+    P2 -.-> S3
+    P2 -.-> S4
+    
+    %% Phase 4에서 하위로
+    P4 -.-> P4_1
+    P4 -.-> P4_2
+    P4 -.-> P4_3
+    P4 -.-> P4_4
+    
+    %% Phase 5에서 하위로
+    P5 -.-> P5_1
+    P5 -.-> P5_2
+    P5 -.-> P5_3
+    P5 -.-> P5_4
+    
+    %% 스타일
+    classDef default fill:#fff,stroke:#000,stroke-width:2px,color:#000
+    classDef mainPhase fill:#f0f0f0,stroke:#000,stroke-width:2px,color:#000
+    
+    class P2,P3,P4,P5 mainPhase

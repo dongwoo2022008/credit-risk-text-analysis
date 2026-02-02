@@ -1,0 +1,184 @@
+<mxfile host="app.diagrams.net" modified="2026-01-23T00:00:00.000Z" agent="Manus" version="22.1.16">
+  <diagram name="Paper Flowchart" id="paper-flow">
+    <mxGraphModel dx="1800" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2000" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- Phase 0 -->
+        <mxCell id="p0" value="Phase 0&lt;br&gt;(구조화단독)" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="80" y="80" width="140" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Phase 1 -->
+        <mxCell id="p1" value="Phase 1&lt;br&gt;(텍스트단독)" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="80" y="240" width="140" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Phase 2 -->
+        <mxCell id="p2" value="Phase 2&lt;br&gt;(구조화+텍스트)" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#f0f0f0;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="340" y="160" width="160" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Phase 3 -->
+        <mxCell id="p3" value="Phase 3&lt;br&gt;(하이퍼파라미터튜닝)" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#f0f0f0;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="600" y="160" width="180" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Phase 4 -->
+        <mxCell id="p4" value="Phase 4&lt;br&gt;(앙상블)" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#f0f0f0;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="860" y="160" width="140" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Phase 5 -->
+        <mxCell id="p5" value="Phase 5&lt;br&gt;(텍스트 조건부 추가)" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#f0f0f0;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="160" width="180" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Stage 1 -->
+        <mxCell id="s1" value="Stage1&lt;br&gt;(tf-idf)" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="80" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Stage 2 -->
+        <mxCell id="s2" value="Stage2&lt;br&gt;(subword)" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="220" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Stage 3 -->
+        <mxCell id="s3" value="Stage3&lt;br&gt;(MINiLM)" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="360" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Stage 4 -->
+        <mxCell id="s4" value="Stage4&lt;br&gt;(KoSimCSE)" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="500" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Phase 4 sub-phases -->
+        <mxCell id="p4_1" value="Phase 4-1&lt;br&gt;Voting H" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1.5;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="720" y="360" width="120" height="50" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="p4_2" value="Phase 4-2&lt;br&gt;Voting W" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1.5;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="860" y="360" width="120" height="50" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="p4_3" value="Phase 4-3&lt;br&gt;Blanding" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1.5;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="360" width="120" height="50" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="p4_4" value="Phase 4-4&lt;br&gt;Stacking" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1.5;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1140" y="360" width="120" height="50" as="geometry" />
+        </mxCell>
+        
+        <!-- Phase 5 sub-phases -->
+        <mxCell id="p5_1" value="Phase 5-1&lt;br&gt;(경계효과)" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1.5;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="360" width="120" height="50" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="p5_2" value="Phase 5-2&lt;br&gt;(오류사례)" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1.5;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1180" y="360" width="120" height="50" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="p5_3" value="Phase 5-3&lt;br&gt;(원격값)" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1.5;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1320" y="360" width="120" height="50" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="p5_4" value="Phase 5-4&lt;br&gt;(텍스트길이)" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1.5;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1460" y="360" width="120" height="50" as="geometry" />
+        </mxCell>
+        
+        <!-- Main flow connections (curved) -->
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;curved=1;strokeWidth=2;dashed=1;" edge="1" parent="1" source="p0" target="p2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;curved=1;strokeWidth=2;dashed=1;" edge="1" parent="1" source="p1" target="p2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;curved=1;strokeWidth=2;" edge="1" parent="1" source="p2" target="p3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;curved=1;strokeWidth=2;" edge="1" parent="1" source="p3" target="p4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="e5" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;curved=1;strokeWidth=2;" edge="1" parent="1" source="p4" target="p5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- P1 to Stages (curved) -->
+        <mxCell id="e6" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;curved=1;strokeWidth=1.5;dashed=1;" edge="1" parent="1" source="p1" target="s1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="e7" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;curved=1;strokeWidth=1.5;dashed=1;" edge="1" parent="1" source="p1" target="s2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="e8" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;curved=1;strokeWidth=1.5;dashed=1;" edge="1" parent="1" source="p1" target="s3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="e9" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;curved=1;strokeWidth=1.5;dashed=1;" edge="1" parent="1" source="p1" target="s4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- P2 to Stages (curved) -->
+        <mxCell id="e10" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;curved=1;strokeWidth=1.5;dashed=1;" edge="1" parent="1" source="p2" target="s1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="e11" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;curved=1;strokeWidth=1.5;dashed=1;" edge="1" parent="1" source="p2" target="s2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="e12" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;curved=1;strokeWidth=1.5;dashed=1;" edge="1" parent="1" source="p2" target="s3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="e13" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;curved=1;strokeWidth=1.5;dashed=1;" edge="1" parent="1" source="p2" target="s4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- P4 to sub-phases (curved) -->
+        <mxCell id="e14" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;curved=1;strokeWidth=1.5;dashed=1;" edge="1" parent="1" source="p4" target="p4_1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="e15" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;curved=1;strokeWidth=1.5;dashed=1;" edge="1" parent="1" source="p4" target="p4_2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="e16" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;curved=1;strokeWidth=1.5;dashed=1;" edge="1" parent="1" source="p4" target="p4_3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="e17" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;curved=1;strokeWidth=1.5;dashed=1;" edge="1" parent="1" source="p4" target="p4_4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- P5 to sub-phases (curved) -->
+        <mxCell id="e18" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;curved=1;strokeWidth=1.5;dashed=1;" edge="1" parent="1" source="p5" target="p5_1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="e19" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;curved=1;strokeWidth=1.5;dashed=1;" edge="1" parent="1" source="p5" target="p5_2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="e20" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;curved=1;strokeWidth=1.5;dashed=1;" edge="1" parent="1" source="p5" target="p5_3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="e21" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;curved=1;strokeWidth=1.5;dashed=1;" edge="1" parent="1" source="p5" target="p5_4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

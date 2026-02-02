@@ -1,0 +1,70 @@
+%%{init: {'theme':'base', 'themeVariables': { 'primaryColor':'#fff','primaryTextColor':'#000','primaryBorderColor':'#000','lineColor':'#000','fontSize':'20px'}}}%%
+flowchart TB
+    %% Upper Tier
+    P0["<span style='font-size:24px'><b>① Phase 0</b><br/>Structured Only</span>"]
+    P1["<span style='font-size:24px'><b>② Phase 1</b><br/>Text Only</span>"]
+    P2["<span style='font-size:24px'><b>③ Phase 2</b><br/>Structured + Text</span>"]
+    P3["<span style='font-size:24px'><b>④ Phase 3</b><br/>Hyperparameter<br/>Tuning</span>"]
+    P4["<span style='font-size:24px'><b>⑤ Phase 4</b><br/>Ensemble</span>"]
+    
+    %% Lower Tier
+    P5["<span style='font-size:24px'><b>⑥ Phase 5</b><br/>Conditional Text<br/>Addition</span>"]
+    
+    %% Text Embedding Methods Group
+    subgraph SG["<span style='font-size:22px'><b>Text Embedding Methods</b></span>"]
+        direction LR
+        S1["<span style='font-size:20px'><b>Stage 1</b><br/>tf-idf</span>"]
+        S2["<span style='font-size:20px'><b>Stage 2</b><br/>subword</span>"]
+        S3["<span style='font-size:20px'><b>Stage 3</b><br/>MINiLM</span>"]
+        S4["<span style='font-size:20px'><b>Stage 4</b><br/>KoSimCSE</span>"]
+    end
+    
+    %% Phase 4 Sub-techniques
+    subgraph P4G["<span style='font-size:22px'><b>Phase 4 Techniques</b></span>"]
+        direction LR
+        P4_1["<span style='font-size:20px'><b>Voting H</b></span>"]
+        P4_2["<span style='font-size:20px'><b>Voting W</b></span>"]
+        P4_3["<span style='font-size:20px'><b>Blanding</b></span>"]
+        P4_4["<span style='font-size:20px'><b>Stacking</b></span>"]
+    end
+    
+    %% Phase 5 Sub-techniques
+    subgraph P5G["<span style='font-size:22px'><b>Phase 5 Techniques</b></span>"]
+        direction LR
+        P5_1["<span style='font-size:20px'><b>Boundary<br/>Effect</b></span>"]
+        P5_2["<span style='font-size:20px'><b>Error<br/>Cases</b></span>"]
+        P5_3["<span style='font-size:20px'><b>Outlier</b></span>"]
+        P5_4["<span style='font-size:20px'><b>Text<br/>Length</b></span>"]
+    end
+    
+    %% Upper Tier Flow
+    P0 --> P2
+    P1 --> P2
+    P2 -->|"<span style='font-size:18px'><b>Integrate</b></span>"| P3
+    P3 -->|"<span style='font-size:18px'><b>Optimize</b></span>"| P4
+    
+    %% Vertical Connection to Lower Tier
+    P4 -->|"<span style='font-size:18px'><b>Conditional</b></span>"| P5
+    
+    %% Stage Connections
+    P1 -.->|"<span style='font-size:16px'><b>4 Methods</b></span>"| SG
+    P2 -.->|"<span style='font-size:16px'><b>4 Methods</b></span>"| SG
+    
+    %% Sub-technique Connections
+    P4 -.-> P4G
+    P5 -.-> P5G
+    
+    %% Styles
+    classDef inputStyle fill:#e3f2fd,stroke:#1976d2,stroke-width:3px,color:#000
+    classDef processStyle fill:#f5f5f5,stroke:#424242,stroke-width:3px,color:#000
+    classDef stageStyle fill:#fff9c4,stroke:#f57f17,stroke-width:2.5px,color:#000
+    classDef subStyle fill:#e8f5e9,stroke:#388e3c,stroke-width:2.5px,color:#000
+    
+    class P0,P1 inputStyle
+    class P2,P3,P4,P5 processStyle
+    class S1,S2,S3,S4 stageStyle
+    class P4_1,P4_2,P4_3,P4_4,P5_1,P5_2,P5_3,P5_4 subStyle
+    
+    style SG fill:#fffde7,stroke:#f57f17,stroke-width:3px,stroke-dasharray: 8 8
+    style P4G fill:#f1f8e9,stroke:#388e3c,stroke-width:3px,stroke-dasharray: 8 8
+    style P5G fill:#f1f8e9,stroke:#388e3c,stroke-width:3px,stroke-dasharray: 8 8

@@ -1,0 +1,140 @@
+<mxfile host="app.diagrams.net" modified="2026-01-23T00:00:00.000Z" agent="Manus" version="22.1.16">
+  <diagram name="Paper Flowchart Improved" id="paper-flow-v2">
+    <mxGraphModel dx="1600" dy="1200" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="1400" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- 입력 단계 (파란색) -->
+        <mxCell id="p0" value="① Phase 0&lt;br&gt;(구조화단독)" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=13;fillColor=#e3f2fd;strokeColor=#1976d2;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="200" y="80" width="160" height="70" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="p1" value="② Phase 1&lt;br&gt;(텍스트단독)" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=13;fillColor=#e3f2fd;strokeColor=#1976d2;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="520" y="80" width="160" height="70" as="geometry" />
+        </mxCell>
+        
+        <!-- 메인 처리 흐름 (회색) -->
+        <mxCell id="p2" value="③ Phase 2&lt;br&gt;(구조화+텍스트)" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=13;fillColor=#f5f5f5;strokeColor=#424242;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="360" y="220" width="160" height="70" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="p3" value="④ Phase 3&lt;br&gt;(하이퍼파라미터튜닝)" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=13;fillColor=#f5f5f5;strokeColor=#424242;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="360" y="360" width="180" height="70" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="p4" value="⑤ Phase 4&lt;br&gt;(앙상블)" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=13;fillColor=#f5f5f5;strokeColor=#424242;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="360" y="500" width="160" height="70" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="p5" value="⑥ Phase 5&lt;br&gt;(텍스트 조건부 추가)" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=13;fillColor=#f5f5f5;strokeColor=#424242;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="360" y="720" width="180" height="70" as="geometry" />
+        </mxCell>
+        
+        <!-- Stage 그룹 박스 -->
+        <mxCell id="sg_box" value="텍스트 임베딩 방법" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=12;fillColor=#fffde7;strokeColor=#f57f17;dashed=1;dashPattern=5 5;verticalAlign=top;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="820" y="180" width="500" height="140" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="s1" value="Stage1&lt;br&gt;(tf-idf)" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=11;fillColor=#fff9c4;strokeColor=#f57f17;" vertex="1" parent="1">
+          <mxGeometry x="840" y="230" width="100" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="s2" value="Stage2&lt;br&gt;(subword)" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=11;fillColor=#fff9c4;strokeColor=#f57f17;" vertex="1" parent="1">
+          <mxGeometry x="970" y="230" width="100" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="s3" value="Stage3&lt;br&gt;(MINiLM)" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=11;fillColor=#fff9c4;strokeColor=#f57f17;" vertex="1" parent="1">
+          <mxGeometry x="1100" y="230" width="100" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="s4" value="Stage4&lt;br&gt;(KoSimCSE)" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=11;fillColor=#fff9c4;strokeColor=#f57f17;" vertex="1" parent="1">
+          <mxGeometry x="1230" y="230" width="100" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Phase 4 하위 그룹 -->
+        <mxCell id="p4g_box" value="Phase 4 세부 기법" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=11;fillColor=#f1f8e9;strokeColor=#388e3c;dashed=1;dashPattern=5 5;verticalAlign=top;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="680" y="460" width="500" height="140" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="p4_1" value="4-1&lt;br&gt;Voting H" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1.5;fontSize=11;fillColor=#e8f5e9;strokeColor=#388e3c;" vertex="1" parent="1">
+          <mxGeometry x="700" y="510" width="100" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="p4_2" value="4-2&lt;br&gt;Voting W" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1.5;fontSize=11;fillColor=#e8f5e9;strokeColor=#388e3c;" vertex="1" parent="1">
+          <mxGeometry x="830" y="510" width="100" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="p4_3" value="4-3&lt;br&gt;Blanding" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1.5;fontSize=11;fillColor=#e8f5e9;strokeColor=#388e3c;" vertex="1" parent="1">
+          <mxGeometry x="960" y="510" width="100" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="p4_4" value="4-4&lt;br&gt;Stacking" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1.5;fontSize=11;fillColor=#e8f5e9;strokeColor=#388e3c;" vertex="1" parent="1">
+          <mxGeometry x="1090" y="510" width="100" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Phase 5 하위 그룹 -->
+        <mxCell id="p5g_box" value="Phase 5 세부 기법" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=11;fillColor=#f1f8e9;strokeColor=#388e3c;dashed=1;dashPattern=5 5;verticalAlign=top;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="680" y="680" width="500" height="140" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="p5_1" value="5-1&lt;br&gt;경계효과" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1.5;fontSize=11;fillColor=#e8f5e9;strokeColor=#388e3c;" vertex="1" parent="1">
+          <mxGeometry x="700" y="730" width="100" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="p5_2" value="5-2&lt;br&gt;오류사례" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1.5;fontSize=11;fillColor=#e8f5e9;strokeColor=#388e3c;" vertex="1" parent="1">
+          <mxGeometry x="830" y="730" width="100" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="p5_3" value="5-3&lt;br&gt;원격값" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1.5;fontSize=11;fillColor=#e8f5e9;strokeColor=#388e3c;" vertex="1" parent="1">
+          <mxGeometry x="960" y="730" width="100" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="p5_4" value="5-4&lt;br&gt;텍스트길이" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1.5;fontSize=11;fillColor=#e8f5e9;strokeColor=#388e3c;" vertex="1" parent="1">
+          <mxGeometry x="1090" y="730" width="100" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- 메인 흐름 연결 -->
+        <mxCell id="e1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;curved=1;strokeWidth=2.5;strokeColor=#1976d2;" edge="1" parent="1" source="p0" target="p2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="e2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;curved=1;strokeWidth=2.5;strokeColor=#1976d2;" edge="1" parent="1" source="p1" target="p2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="e3" value="통합" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;curved=1;strokeWidth=2.5;strokeColor=#424242;fontSize=11;fontStyle=1" edge="1" parent="1" source="p2" target="p3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="e4" value="최적화" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;curved=1;strokeWidth=2.5;strokeColor=#424242;fontSize=11;fontStyle=1" edge="1" parent="1" source="p3" target="p4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="e5" value="조건부 적용" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;curved=1;strokeWidth=2.5;strokeColor=#424242;fontSize=11;fontStyle=1" edge="1" parent="1" source="p4" target="p5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Stage 그룹 연결 -->
+        <mxCell id="e6" value="4가지 방법 적용" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;curved=1;strokeWidth=2;dashed=1;strokeColor=#f57f17;fontSize=11;fontStyle=1" edge="1" parent="1" source="p1" target="sg_box">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="e7" value="4가지 방법 적용" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;curved=1;strokeWidth=2;dashed=1;strokeColor=#f57f17;fontSize=11;fontStyle=1" edge="1" parent="1" source="p2" target="sg_box">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Phase 4 하위 연결 -->
+        <mxCell id="e8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;curved=1;strokeWidth=2;dashed=1;strokeColor=#388e3c;" edge="1" parent="1" source="p4" target="p4g_box">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Phase 5 하위 연결 -->
+        <mxCell id="e9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;curved=1;strokeWidth=2;dashed=1;strokeColor=#388e3c;" edge="1" parent="1" source="p5" target="p5g_box">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,141 @@
+<mxfile host="app.diagrams.net" modified="2026-01-23T00:00:00.000Z" agent="Manus" version="22.1.16">
+  <diagram name="Paper Flowchart - 2 Tier EN" id="paper-flow-2tier">
+    <mxGraphModel dx="1600" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- Upper Tier: Phase 0-4 -->
+        <mxCell id="p0" value="① Phase 0&lt;br&gt;&lt;b&gt;Structured Only&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2.5;fontSize=13;fillColor=#e3f2fd;strokeColor=#1976d2;fontStyle=0" vertex="1" parent="1">
+          <mxGeometry x="60" y="60" width="160" height="70" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="p1" value="② Phase 1&lt;br&gt;&lt;b&gt;Text Only&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2.5;fontSize=13;fillColor=#e3f2fd;strokeColor=#1976d2;fontStyle=0" vertex="1" parent="1">
+          <mxGeometry x="60" y="170" width="160" height="70" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="p2" value="③ Phase 2&lt;br&gt;&lt;b&gt;Structured + Text&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2.5;fontSize=13;fillColor=#f5f5f5;strokeColor=#424242;fontStyle=0" vertex="1" parent="1">
+          <mxGeometry x="280" y="115" width="180" height="70" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="p3" value="④ Phase 3&lt;br&gt;&lt;b&gt;Hyperparameter&lt;br&gt;Tuning&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2.5;fontSize=13;fillColor=#f5f5f5;strokeColor=#424242;fontStyle=0" vertex="1" parent="1">
+          <mxGeometry x="520" y="115" width="180" height="70" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="p4" value="⑤ Phase 4&lt;br&gt;&lt;b&gt;Ensemble&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2.5;fontSize=13;fillColor=#f5f5f5;strokeColor=#424242;fontStyle=0" vertex="1" parent="1">
+          <mxGeometry x="760" y="115" width="160" height="70" as="geometry" />
+        </mxCell>
+        
+        <!-- Lower Tier: Phase 5 -->
+        <mxCell id="p5" value="⑥ Phase 5&lt;br&gt;&lt;b&gt;Conditional Text&lt;br&gt;Addition&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2.5;fontSize=13;fillColor=#f5f5f5;strokeColor=#424242;fontStyle=0" vertex="1" parent="1">
+          <mxGeometry x="760" y="320" width="180" height="70" as="geometry" />
+        </mxCell>
+        
+        <!-- Stage Group (Lower Left) -->
+        <mxCell id="sg_box" value="&lt;b&gt;Text Embedding Methods&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2.5;fontSize=12;fillColor=#fffde7;strokeColor=#f57f17;dashed=1;dashPattern=5 5;verticalAlign=top;fontStyle=0;align=center;" vertex="1" parent="1">
+          <mxGeometry x="60" y="320" width="620" height="130" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="s1" value="&lt;b&gt;Stage 1&lt;/b&gt;&lt;br&gt;tf-idf" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=12;fillColor=#fff9c4;strokeColor=#f57f17;" vertex="1" parent="1">
+          <mxGeometry x="80" y="365" width="130" height="65" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="s2" value="&lt;b&gt;Stage 2&lt;/b&gt;&lt;br&gt;subword" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=12;fillColor=#fff9c4;strokeColor=#f57f17;" vertex="1" parent="1">
+          <mxGeometry x="230" y="365" width="130" height="65" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="s3" value="&lt;b&gt;Stage 3&lt;/b&gt;&lt;br&gt;MINiLM" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=12;fillColor=#fff9c4;strokeColor=#f57f17;" vertex="1" parent="1">
+          <mxGeometry x="380" y="365" width="130" height="65" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="s4" value="&lt;b&gt;Stage 4&lt;/b&gt;&lt;br&gt;KoSimCSE" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=12;fillColor=#fff9c4;strokeColor=#f57f17;" vertex="1" parent="1">
+          <mxGeometry x="530" y="365" width="130" height="65" as="geometry" />
+        </mxCell>
+        
+        <!-- Phase 4 Techniques (Upper Right) -->
+        <mxCell id="p4g_box" value="&lt;b&gt;Phase 4 Techniques&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2.5;fontSize=12;fillColor=#f1f8e9;strokeColor=#388e3c;dashed=1;dashPattern=5 5;verticalAlign=top;fontStyle=0;align=center;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="60" width="560" height="125" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="p4_1" value="&lt;b&gt;Voting H&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=12;fillColor=#e8f5e9;strokeColor=#388e3c;" vertex="1" parent="1">
+          <mxGeometry x="1020" y="105" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="p4_2" value="&lt;b&gt;Voting W&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=12;fillColor=#e8f5e9;strokeColor=#388e3c;" vertex="1" parent="1">
+          <mxGeometry x="1160" y="105" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="p4_3" value="&lt;b&gt;Blanding&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=12;fillColor=#e8f5e9;strokeColor=#388e3c;" vertex="1" parent="1">
+          <mxGeometry x="1300" y="105" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="p4_4" value="&lt;b&gt;Stacking&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=12;fillColor=#e8f5e9;strokeColor=#388e3c;" vertex="1" parent="1">
+          <mxGeometry x="1440" y="105" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Phase 5 Techniques (Lower Right) -->
+        <mxCell id="p5g_box" value="&lt;b&gt;Phase 5 Techniques&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2.5;fontSize=12;fillColor=#f1f8e9;strokeColor=#388e3c;dashed=1;dashPattern=5 5;verticalAlign=top;fontStyle=0;align=center;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="285" width="560" height="130" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="p5_1" value="&lt;b&gt;Boundary&lt;br&gt;Effect&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=12;fillColor=#e8f5e9;strokeColor=#388e3c;" vertex="1" parent="1">
+          <mxGeometry x="1020" y="330" width="120" height="65" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="p5_2" value="&lt;b&gt;Error&lt;br&gt;Cases&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=12;fillColor=#e8f5e9;strokeColor=#388e3c;" vertex="1" parent="1">
+          <mxGeometry x="1160" y="330" width="120" height="65" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="p5_3" value="&lt;b&gt;Outlier&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=12;fillColor=#e8f5e9;strokeColor=#388e3c;" vertex="1" parent="1">
+          <mxGeometry x="1300" y="330" width="120" height="65" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="p5_4" value="&lt;b&gt;Text&lt;br&gt;Length&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=12;fillColor=#e8f5e9;strokeColor=#388e3c;" vertex="1" parent="1">
+          <mxGeometry x="1440" y="330" width="120" height="65" as="geometry" />
+        </mxCell>
+        
+        <!-- Upper Tier Connections -->
+        <mxCell id="e1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;curved=1;strokeWidth=2.5;strokeColor=#1976d2;" edge="1" parent="1" source="p0" target="p2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="e2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;curved=1;strokeWidth=2.5;strokeColor=#1976d2;" edge="1" parent="1" source="p1" target="p2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="e3" value="&lt;b&gt;Integrate&lt;/b&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;curved=1;strokeWidth=2.5;strokeColor=#424242;fontSize=11;fontStyle=0" edge="1" parent="1" source="p2" target="p3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="e4" value="&lt;b&gt;Optimize&lt;/b&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;curved=1;strokeWidth=2.5;strokeColor=#424242;fontSize=11;fontStyle=0" edge="1" parent="1" source="p3" target="p4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Vertical Connection: Phase 4 to Phase 5 -->
+        <mxCell id="e5" value="&lt;b&gt;Conditional&lt;/b&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;curved=1;strokeWidth=2.5;strokeColor=#424242;fontSize=11;fontStyle=0" edge="1" parent="1" source="p4" target="p5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Stage Group Connections -->
+        <mxCell id="e6" value="&lt;b&gt;4 Methods&lt;/b&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;curved=1;strokeWidth=2;dashed=1;strokeColor=#f57f17;fontSize=11;fontStyle=0" edge="1" parent="1" source="p1" target="sg_box">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="e7" value="&lt;b&gt;4 Methods&lt;/b&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;curved=1;strokeWidth=2;dashed=1;strokeColor=#f57f17;fontSize=11;fontStyle=0" edge="1" parent="1" source="p2" target="sg_box">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Phase 4 Sub-techniques Connection -->
+        <mxCell id="e8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;curved=1;strokeWidth=2;dashed=1;strokeColor=#388e3c;" edge="1" parent="1" source="p4" target="p4g_box">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Phase 5 Sub-techniques Connection -->
+        <mxCell id="e9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;curved=1;strokeWidth=2;dashed=1;strokeColor=#388e3c;" edge="1" parent="1" source="p5" target="p5g_box">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,155 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Research Flowchart" id="flowchart">
+    <mxGraphModel dx="1434" dy="796" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2200" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- Phase 0 -->
+        <mxCell id="P0" value="&lt;b style=&quot;font-size:20px&quot;&gt;① Phase 0&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:18px&quot;&gt;Structured Only&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e3f2fd;strokeColor=#1976d2;strokeWidth=4;fontSize=18;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="50" y="150" width="180" height="100" as="geometry" />
+        </mxCell>
+        
+        <!-- Phase 1 -->
+        <mxCell id="P1" value="&lt;b style=&quot;font-size:20px&quot;&gt;② Phase 1&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:18px&quot;&gt;Text Only&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e3f2fd;strokeColor=#1976d2;strokeWidth=4;fontSize=18;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="50" y="280" width="180" height="100" as="geometry" />
+        </mxCell>
+        
+        <!-- Phase 2 -->
+        <mxCell id="P2" value="&lt;b style=&quot;font-size:20px&quot;&gt;③ Phase 2&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:18px&quot;&gt;Structured + Text&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#424242;strokeWidth=4;fontSize=18;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="300" y="200" width="200" height="100" as="geometry" />
+        </mxCell>
+        
+        <!-- Phase 3 -->
+        <mxCell id="P3" value="&lt;b style=&quot;font-size:20px&quot;&gt;④ Phase 3&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:17px&quot;&gt;Hyperparameter&lt;br&gt;Tuning&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#424242;strokeWidth=4;fontSize=17;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="570" y="200" width="220" height="100" as="geometry" />
+        </mxCell>
+        
+        <!-- Phase 4 -->
+        <mxCell id="P4" value="&lt;b style=&quot;font-size:20px&quot;&gt;⑤ Phase 4&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:18px&quot;&gt;Ensemble&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#424242;strokeWidth=4;fontSize=18;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="570" y="400" width="200" height="100" as="geometry" />
+        </mxCell>
+        
+        <!-- Phase 5 -->
+        <mxCell id="P5" value="&lt;b style=&quot;font-size:20px&quot;&gt;⑥ Phase 5&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:17px&quot;&gt;Conditional Text&lt;br&gt;Addition&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#424242;strokeWidth=4;fontSize=17;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="850" y="400" width="240" height="100" as="geometry" />
+        </mxCell>
+        
+        <!-- Stage Group Box -->
+        <mxCell id="SG_box" value="&lt;b style=&quot;font-size:20px&quot;&gt;Text Embedding Methods&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fffde7;strokeColor=#f57f17;strokeWidth=4;dashed=1;dashPattern=10 10;fontSize=20;fontStyle=1;verticalAlign=top;align=center" vertex="1" parent="1">
+          <mxGeometry x="900" y="50" width="760" height="180" as="geometry" />
+        </mxCell>
+        
+        <!-- Stage 1 -->
+        <mxCell id="S1" value="&lt;b style=&quot;font-size:19px&quot;&gt;Stage 1&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:18px&quot;&gt;tf-idf&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff9c4;strokeColor=#f57f17;strokeWidth=3;fontSize=18;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="920" y="110" width="160" height="90" as="geometry" />
+        </mxCell>
+        
+        <!-- Stage 2 -->
+        <mxCell id="S2" value="&lt;b style=&quot;font-size:19px&quot;&gt;Stage 2&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:18px&quot;&gt;subword&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff9c4;strokeColor=#f57f17;strokeWidth=3;fontSize=18;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1100" y="110" width="160" height="90" as="geometry" />
+        </mxCell>
+        
+        <!-- Stage 3 -->
+        <mxCell id="S3" value="&lt;b style=&quot;font-size:19px&quot;&gt;Stage 3&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:18px&quot;&gt;MINiLM&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff9c4;strokeColor=#f57f17;strokeWidth=3;fontSize=18;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1280" y="110" width="160" height="90" as="geometry" />
+        </mxCell>
+        
+        <!-- Stage 4 -->
+        <mxCell id="S4" value="&lt;b style=&quot;font-size:19px&quot;&gt;Stage 4&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:17px&quot;&gt;KoSimCSE&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff9c4;strokeColor=#f57f17;strokeWidth=3;fontSize=17;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1460" y="110" width="160" height="90" as="geometry" />
+        </mxCell>
+        
+        <!-- Phase 4 Techniques Box -->
+        <mxCell id="P4G_box" value="&lt;b style=&quot;font-size:20px&quot;&gt;Phase 4 Techniques&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f1f8e9;strokeColor=#388e3c;strokeWidth=4;dashed=1;dashPattern=10 10;fontSize=20;fontStyle=1;verticalAlign=top;align=center" vertex="1" parent="1">
+          <mxGeometry x="50" y="640" width="760" height="180" as="geometry" />
+        </mxCell>
+        
+        <!-- P4-1 -->
+        <mxCell id="P4_1" value="&lt;b style=&quot;font-size:19px&quot;&gt;Voting H&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f5e9;strokeColor=#388e3c;strokeWidth=3;fontSize=19;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="70" y="700" width="160" height="90" as="geometry" />
+        </mxCell>
+        
+        <!-- P4-2 -->
+        <mxCell id="P4_2" value="&lt;b style=&quot;font-size:19px&quot;&gt;Voting W&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f5e9;strokeColor=#388e3c;strokeWidth=3;fontSize=19;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="250" y="700" width="160" height="90" as="geometry" />
+        </mxCell>
+        
+        <!-- P4-3 -->
+        <mxCell id="P4_3" value="&lt;b style=&quot;font-size:19px&quot;&gt;Blanding&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f5e9;strokeColor=#388e3c;strokeWidth=3;fontSize=19;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="430" y="700" width="160" height="90" as="geometry" />
+        </mxCell>
+        
+        <!-- P4-4 -->
+        <mxCell id="P4_4" value="&lt;b style=&quot;font-size:19px&quot;&gt;Stacking&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f5e9;strokeColor=#388e3c;strokeWidth=3;fontSize=19;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="610" y="700" width="160" height="90" as="geometry" />
+        </mxCell>
+        
+        <!-- Phase 5 Techniques Box (with more padding) -->
+        <mxCell id="P5G_box" value="&lt;b style=&quot;font-size:20px&quot;&gt;Phase 5 Techniques&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f1f8e9;strokeColor=#388e3c;strokeWidth=4;dashed=1;dashPattern=10 10;fontSize=20;fontStyle=1;verticalAlign=top;align=center" vertex="1" parent="1">
+          <mxGeometry x="880" y="640" width="820" height="180" as="geometry" />
+        </mxCell>
+        
+        <!-- P5-1 -->
+        <mxCell id="P5_1" value="&lt;b style=&quot;font-size:18px&quot;&gt;Boundary&lt;br&gt;Effect&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f5e9;strokeColor=#388e3c;strokeWidth=3;fontSize=18;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="910" y="700" width="170" height="90" as="geometry" />
+        </mxCell>
+        
+        <!-- P5-2 -->
+        <mxCell id="P5_2" value="&lt;b style=&quot;font-size:18px&quot;&gt;Error&lt;br&gt;Cases&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f5e9;strokeColor=#388e3c;strokeWidth=3;fontSize=18;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1100" y="700" width="170" height="90" as="geometry" />
+        </mxCell>
+        
+        <!-- P5-3 -->
+        <mxCell id="P5_3" value="&lt;b style=&quot;font-size:19px&quot;&gt;Outlier&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f5e9;strokeColor=#388e3c;strokeWidth=3;fontSize=19;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1290" y="700" width="170" height="90" as="geometry" />
+        </mxCell>
+        
+        <!-- P5-4 -->
+        <mxCell id="P5_4" value="&lt;b style=&quot;font-size:18px&quot;&gt;Text&lt;br&gt;Length&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f5e9;strokeColor=#388e3c;strokeWidth=3;fontSize=18;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1480" y="700" width="170" height="90" as="geometry" />
+        </mxCell>
+        
+        <!-- Arrows: Main Flow -->
+        <mxCell id="arrow_P0_P2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#1976d2;strokeWidth=3.5;curved=1;endArrow=block;endFill=1;endSize=10" edge="1" parent="1" source="P0" target="P2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="arrow_P1_P2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#1976d2;strokeWidth=3.5;curved=1;endArrow=block;endFill=1;endSize=10" edge="1" parent="1" source="P1" target="P2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="arrow_P2_P3" value="&lt;b style=&quot;font-size:18px&quot;&gt;Integrate&lt;/b&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#424242;strokeWidth=3.5;curved=1;endArrow=block;endFill=1;endSize=10;fontSize=18;fontStyle=1;labelBackgroundColor=#ffffff" edge="1" parent="1" source="P2" target="P3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="arrow_P3_P4" value="&lt;b style=&quot;font-size:18px&quot;&gt;Optimize&lt;/b&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#424242;strokeWidth=3.5;curved=1;endArrow=block;endFill=1;endSize=10;fontSize=18;fontStyle=1;labelBackgroundColor=#ffffff" edge="1" parent="1" source="P3" target="P4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="arrow_P4_P5" value="&lt;b style=&quot;font-size:18px&quot;&gt;Conditional&lt;/b&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#424242;strokeWidth=3.5;curved=1;endArrow=block;endFill=1;endSize=10;fontSize=18;fontStyle=1;labelBackgroundColor=#ffffff" edge="1" parent="1" source="P4" target="P5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Arrows: Stage Connections -->
+        <mxCell id="arrow_P1_SG" value="&lt;b style=&quot;font-size:17px&quot;&gt;4 Methods&lt;/b&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#f57f17;strokeWidth=3;curved=1;dashed=1;dashPattern=10 10;endArrow=block;endFill=1;endSize=10;fontSize=17;fontStyle=1;labelBackgroundColor=#ffffff" edge="1" parent="1" source="P1" target="S2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="arrow_P2_SG" value="&lt;b style=&quot;font-size:17px&quot;&gt;4 Methods&lt;/b&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#f57f17;strokeWidth=3;curved=1;dashed=1;dashPattern=10 10;endArrow=block;endFill=1;endSize=10;fontSize=17;fontStyle=1;labelBackgroundColor=#ffffff" edge="1" parent="1" source="P2" target="S2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Arrows: Sub-technique Connections -->
+        <mxCell id="arrow_P4_P4G" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#388e3c;strokeWidth=3;curved=1;dashed=1;dashPattern=10 10;endArrow=block;endFill=1;endSize=10" edge="1" parent="1" source="P4" target="P4_2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="arrow_P5_P5G" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#388e3c;strokeWidth=3;curved=1;dashed=1;dashPattern=10 10;endArrow=block;endFill=1;endSize=10" edge="1" parent="1" source="P5" target="P5_2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
