@@ -1,0 +1,14 @@
+# NEVER commit data (confidential, provided under NDA)
+data/
+*.xlsx
+*.csv
+
+# artifacts
+models/
+results/
+__pycache__/
+*.pyc
+*.joblib
+.ipynb_checkpoints/
+venv/
+.DS_Store
